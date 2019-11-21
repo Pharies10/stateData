@@ -1,0 +1,58 @@
+Stateabbv,Statename,,Stateplan,Standards,Funding,Certification,Preserviceincentives,Statepos,reqHS,gradReqt,Highered
+AK,Alaska,,No,Yes,No,No,No,No,No,District Decision,No
+AL,Alabama,,In progress,Yes,Yes,Yes,No,In Progress,Yes,Yes,Yes
+AR,Arkansas,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+AZ,Arizona,,No,Yes,Yes,Yes,No,No,No,District Decision,No
+CA,California,,Yes,Yes,Other,Yes,No,In Progress,No,District Decision,Yes
+CO,Colorado,,No,No,Yes,No,No,Yes,No,District Decision,Yes
+CT,Connecticut,,In progress,Yes,No,Yes,Yes,Yes,Yes,No,No
+DC,District of Columbia,,No,No,No,Yes,No,No,No,Yes,No
+DE,Delaware,,No,Yes,No,No,No,No,Yes,Yes,No
+FL,Florida,,No,Yes,Yes,Yes,No,Yes,Yes,Yes,No
+GA,Georgia,,Yes,In progress,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+HI,Hawaii,,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,No
+IA,Iowa,,No,Yes,Yes,Yes,Yes,Yes,Other,District Decision,No
+ID,Idaho,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+IL,Illinois,,No,No,No,Yes,No,No,No,Yes,Yes
+IN,Indiana,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+KS,Kansas,,In progress,Yes,No,No,No,No,No,No,No
+KY,Kentucky,,No,Yes,No,Yes,No,No,No,District Decision,Yes
+LA,Louisiana,,No,No,No,Yes,No,No,No,Yes,Yes
+MA,Massachusetts,,In progress,Yes,Other-Historic,Yes,Yes,Yes,No,Yes,Yes
+MD,Maryland,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+ME,Maine,,In progress,No,No,No,No,No,No,No,No
+MI,Michigan,,No,Yes,Other,No,Yes,No,No,Yes,No
+MN,Minnesota,,No,No,No,No,No,In Progress,No,Yes,No
+MO,Missouri,,No,Yes,Yes,Yes,No,No,No,Yes,No
+MS,Mississippi,,No,Yes,Yes,Yes,No,No,No,Yes,Yes
+MT,Montana,,No,In progress,No,Yes,Yes,No,No,District Decision,No
+NC,North Carolina,,Yes,In progress,Yes,Yes,No,Yes,No,Yes,No
+ND,North Dakota,,No,Yes,No,Yes,No,No,No,Yes,No
+NE,Nebraska,,In progress,No,No,No,No,No,No,District Decision,No
+NH,New Hampshire,,Yes,Yes,No,Yes,No,Yes,Yes,District Decision,No
+NJ,New Jersey,,No,Yes,Yes,Yes,No,No,Yes,Yes,No
+NM,New Mexico,,No,Yes,Yes,No,No,No,No,Yes,No
+NV,Nevada,,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+NY,New York,,No,In progress,Yes,Yes,No,No,No,District Decision,No
+OH,Ohio,,No,Yes,Yes,Yes,Yes,Yes,No,Yes,No
+OK,Oklahoma,,No,Yes,No,Yes,No,Yes,Other,Yes,No
+OR,Oregon,,No,No,No,No,No,No,No,District Decision,No
+PA,Pennsylvania,,No,Yes,Yes,No,Yes,Yes,No,Yes,No
+RI,Rhode Island,,Yes,Yes,Yes,No,No,No,Other,Yes,No
+SC,South Carolina,,In progress,Yes,Yes,Yes,No,No,Yes,Yes,Yes
+SD,South Dakota,,No,No,No,No,No,No,No,Yes,No
+TN,Tennessee,,In progress,No,No,Yes,No,No,No,Yes,No
+TX,Texas,,In progress,Soon in progress,Other,Yes,Yes,No,Yes,Yes,Yes
+UT,Utah,,Yes,Yes,Yes,Yes,Yes,Yes,No,Yes,No
+VA,Virginia,,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,No
+VT,Vermont,,No,No,No,Yes,Yes,No,No,District Decision,No
+WA,Washington,,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes
+WI,Wisconsin,,No,Yes,No,Yes,Yes,No,Other,Yes,No
+WV,West Virginia,,In progress,Yes,No,Yes,No,No,Yes,Yes,No
+WY,Wyoming,,Yes,In progress,Other,Yes,No,Yes,Yes,Yes,Yes
+Puerto Rico,Territory,,No,No,No,No,No,No,No,No,No
+Guam,Territory,,No,No,No,38,No,No,No,No,No
+US Virgin Islands,Territory,,No,No,No,No,No,No,No,No,No
+Northern Mariana Islands,Territory,,No,No,No,No,No,No,No,No,No
+American Samoa,Territory,,No,No,No,No,No,No,No,No,No
+,,,13,34,25,38,19,21,19,48,
