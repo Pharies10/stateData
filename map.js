@@ -3,23 +3,30 @@ var screen = {width:1000,height:900}
 var margins = {top:10,right:25,left:55,bottom:50}
 
 
-
+var mapPromise = d3.json("https://raw.githubusercontent.com/shawnbot/topogram/master/data/us-states.geojson")
 
 
 var statePromise = d3.csv("/stateData/stateData.csv")
 var stateData = []
 
 var planPromise = d3.csv("/stateData/stateDatapt2.csv")
+var geoPromis = d3.json("us-states.json")
+
 var planData = []
 var statePopData = []
-
+var geoData = {}
 var newData =[]
 
 
 
 
 
-
+var geo = function(data)
+{
+    
+    geoData = data
+    
+}
 
 var success = function(data)
 {
@@ -36,7 +43,7 @@ var success = function(data)
     
 
     
-    
+    console.log(geoData)
     
 
     for (items in stateData)
@@ -49,8 +56,8 @@ var success = function(data)
            
         }
     
-    console.log(planData)
-    setup(newData)
+   
+    setup()
     
    
     
@@ -74,6 +81,16 @@ var fill = function(data)
     
     
 }
+var mapIt = function(data)
+{
+    
+    
+    geoData = data
+    
+    
+}
+geoPromis.then(geo, fail)
+mapPromise.then(mapIt, fail)
 planPromise.then(fill,fail)
 statePromise.then(success, fail)
 
@@ -176,3 +193,86 @@ var editEMP = function(state)
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// draw the map
+var setup = function()
+{
+    
+    var path = d3.geoPath().projection(d3.geoAlbersUsa().translate([screen.width/2, screen.height/2]))
+    d3.select("svg")
+        .attr("width",screen.width)
+        .attr("height",screen.height)
+        .selectAll("path")
+        .data(geoData.features)
+        .enter()
+        .append("path")
+        .style("stroke", "black")
+        .style("fill", function(d){
+        
+        
+        var name = d.properties.name
+        var state = ""
+        for (i in planData)
+        {
+            if (planData[i].Statename == name)
+            {
+                
+                var state = planData[i]
+                
+                
+            }
+            
+            
+        }
+        if (state == "")
+        {
+            
+            return "white"
+            
+        }
+        
+        else if (state.Stateplan == "Yes")
+        {
+            return "blue"
+            
+            
+            
+        }
+        else if (state.Stateplan == "No")
+        {
+                
+                return "cyan"
+                
+                
+        }
+        else
+        {
+            
+            return "yellow"
+            
+        }
+        
+        
+    })
+        .style("border", "solid")
+        .attr("d", path).on("click", function(d){
+        
+        
+        d.properties.name
+        
+        
+    })
+  
+}
