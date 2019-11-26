@@ -1,0 +1,137 @@
+#svgHolder
+{
+    
+   display: inline-block;  
+        position: fixed;
+    bottom:0px;
+    right:0px;
+    width: 80%;
+    height: 90%;
+    
+    
+}
+
+#btnHolder
+{
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    height: 90%;
+    width: 20%;
+    display: inline-block;  
+    background-color: cornflowerblue;
+    overflow: auto;
+}
+#infoHolder
+{
+    position: fixed;
+    bottom:0px;
+    right: 0px;
+    height: 90%;
+    width: 20%;
+    display: inline-block;  
+    background-color: cornflowerblue;
+    overflow: auto;
+}
+#svg
+{
+    position: fixed;
+    bottom:0px;
+    left:20%;
+    right: 20%;
+    height: 90%;
+    width: 60%;
+    display: inline-block;  
+
+    overflow: auto;
+}
+
+
+button
+{
+    border: solid;
+    width: 80%;
+    height: 70px;
+    margin: 7px;
+    font-size: 15pt;
+    
+    
+}
+
+button:hover
+{
+    
+    background-color: indianred;
+
+    color:white;
+    
+}
+
+#title
+{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 10%;
+    width: 100%;
+    
+    background-color: firebrick;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    font-size: 20pt;
+    
+}
+
+#textHolder
+{
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    font-size: 45pt;
+    
+    
+    padding-top: 10px;
+    
+    
+    
+    
+    
+}
+
+
+.state:hover
+{
+    stroke-width: 5px;
+    
+    
+    
+}
+
+
+
+.stateInfo
+{
+    
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+    font-size: 15pt;
+    
+    
+}
+
+#stateName
+{
+    
+    
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 5px;
+    font-size: 20pt;
+    text-align: center;
+    
+    
+    
+    
+}
