@@ -6,10 +6,10 @@ var margins = {top:10,right:25,left:55,bottom:50}
 var mapPromise = d3.json("https://raw.githubusercontent.com/shawnbot/topogram/master/data/us-states.geojson")
 
 
-var statePromise = d3.csv("/stateData/stateData.csv")
+var statePromise = d3.csv("stateData/stateData.csv")
 var stateData = []
 
-var planPromise = d3.csv("/stateData/stateDatapt2.csv")
+var planPromise = d3.csv("stateData/stateDatapt2.csv")
 var geoPromis = d3.json("us-states.json")
 
 var planData = []
@@ -744,15 +744,15 @@ var setup = function()
             
         }
         
-        d3.select("#infoHolder").append("div").attr("id", "stateName").text(state.Statename)
-            d3.select("#infoHolder").append("div").attr("class", "stateInfo").text(state.Stateabbv)
+            d3.select("#infoHolder").append("div").attr("id", "stateName").text(state.Statename)
+            d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Total employed in CSC jobs: " +state.cscEmp)
             d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has a Certification: " + state.Certification)
             d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Funding for k-12 CSC programs: " + state.Funding)
             d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has a CSC Higher Education Requirement: " + state.Highered)
             d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has a Incentives for k-12 CSC Education: " + state.Preserviceincentives)
             d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has set Standards for CSC k-12 Education: " + state.Standards)
             d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has a State Plan in place for CSC k-12 Education: " + state.Stateplan)
-           d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has a State Position in place for CSC k-12 Education: " + state.Statepos)
+            d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has a State Position in place for CSC k-12 Education: " + state.Statepos)
             d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has a High School Graduation Reqirement of CSC: " + state.gradReqt)
             d3.select("#infoHolder").append("div").attr("class", "stateInfo").text("Has a reqirement for High Schools to teach CSC: " + state.reqHS)
       
