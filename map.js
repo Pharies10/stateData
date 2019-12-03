@@ -6,10 +6,10 @@ var margins = {top:10,right:25,left:55,bottom:50}
 var mapPromise = d3.json("https://raw.githubusercontent.com/shawnbot/topogram/master/data/us-states.geojson")
 
 
-var statePromise = d3.csv("/stateData/stateData.csv")
+var statePromise = d3.csv("/data/stateData.csv")
 var stateData = []
 
-var planPromise = d3.csv("/stateData/stateDatapt2.csv")
+var planPromise = d3.csv("/data/stateDatapt2.csv")
 var geoPromis = d3.json("us-states.json")
 
 var planData = []
