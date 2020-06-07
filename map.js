@@ -185,23 +185,15 @@ var makeData = function(state, i)
                     var avgEmp = (state.totalEmp / statePopData[i].totalEmp) * 100
                     planData[items].avgEmp = avgEmp
                     
-                }
-            
-            
-            
-            
+                }   
         }
-    
-    
-    
-    
     
 }
 
 
 
 
-// trn stff into integers
+// turn data into integers
 var editEMP = function(state)
 {
     var totEmp = ""
@@ -215,15 +207,8 @@ var editEMP = function(state)
    totalEmp = parseInt(totEmp) 
    totalEmp = totalEmp
     
-    
-    
-    
     state.totalEmp = totalEmp
     return state
-    
-    
-    
-    
     
 }
 
@@ -312,7 +297,7 @@ var makeCount = function(state)
 
 
 
-// returns the number ti develop the color
+// returns the number to develop the color
 var makeColor = function(state)
 {
     
@@ -347,14 +332,7 @@ var makeColor = function(state)
         return 8
         
         
-    }
-    
-    
-    
-    
-    
-    
-    
+    }  
     
 }
 
@@ -380,7 +358,6 @@ var colorGen = function(state, blue, red, grey)
         }
     
     
-    
 }
 
 // for each individual trait
@@ -402,8 +379,6 @@ var colorGen2 = function(state, what, blue, red, grey)
         {
             return grey(color)
         }
-    
-    
     
 }
 
@@ -491,12 +466,6 @@ var drawLegend = function(colors, red, blue, grey)
 {
     
 
-    
-    
-    
-
-    
-    
     d3.select("svg")
         .append("g")
         .attr("id", "legend")
@@ -601,13 +570,8 @@ var transition = function(type, red, blue, grey)
                         
                         
                         }
-                                                                           
-                                                                           
+                                                                                                                                               
              })
-
-
-
-
 
 
 }
@@ -631,8 +595,6 @@ var makeButtons = function(red, blue, grey)
         
 
         transition(d, red, blue, grey)
-        
-        
         
         
     })
@@ -702,7 +664,7 @@ var setup = function()
         .selectAll("path")
         .data(geoData.features)
         .enter()
-        .append("path").attr("class", "state")
+        .append("path").attr("class", "state").style("pathLength", 50)
         .style("stroke", "black")
         .style("fill", function(d){
         

@@ -54,6 +54,8 @@ button
     height: 70px;
     margin: 7px;
     font-size: 15pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
     
     
 }
@@ -86,9 +88,14 @@ button:hover
 #textHolder
 {
     color: white;
+    width: 100%;
+    height: 90%;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
-    font-size: 45pt;
+    overflow: hidden;
+    font-size: 200%;
+    text-overflow: ellipsis;
+    
     
     
     padding-top: 10px;
@@ -107,7 +114,6 @@ button:hover
     
     
 }
-
 
 
 .stateInfo
