@@ -22,6 +22,12 @@
     background-color: cornflowerblue;
     overflow: auto;
 }
+#btnHolder::-webkit-scrollbar
+{
+    display: none;
+    
+    
+}
 #infoHolder
 {
     position: fixed;
@@ -33,12 +39,19 @@
     background-color: cornflowerblue;
     overflow: auto;
 }
+#infoHolder::-webkit-scrollbar
+{
+    display: none;
+    
+    
+}
 #svg
 {
     position: fixed;
-    bottom:0px;
+    
     left:20%;
     right: 20%;
+    
     height: 90%;
     width: 65%;
     display: inline-block;  
@@ -47,13 +60,14 @@
 }
 
 
+
 button
 {
     border: solid;
-    width: 80%;
+    width: 90%;
     height: 70px;
     margin: 7px;
-    font-size: 15pt;
+    font-size: 1.99vw;
     overflow: hidden;
     text-overflow: ellipsis;
     
@@ -81,24 +95,33 @@ button:hover
     color: white;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
-    font-size: 20pt;
+       overflow: hidden;
+    font-size: 5vw;
+    text-overflow: ellipsis;
+    
+   
     
 }
-
 #textHolder
 {
+    display: inline-block;
+    font-size: 4vw;
     color: white;
-    width: 100%;
-    height: 90%;
+    width: 90%;
+    height: 70%;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
     overflow: hidden;
-    font-size: 200%;
+    
     text-overflow: ellipsis;
     
     
     
     padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    
     
     
     
@@ -109,7 +132,7 @@ button:hover
 
 .state:hover
 {
-    stroke-width: 5px;
+    stroke-width: 0.5vw;
     
     
     
@@ -122,7 +145,7 @@ button:hover
     background-color: aliceblue;
     margin: 10px;
     padding: 5px;
-    font-size: 15pt;
+    font-size: 1.5vw;
     
     
 }
@@ -134,7 +157,7 @@ button:hover
     background-color: aliceblue;
     margin: 10px;
     padding: 5px;
-    font-size: 20pt;
+    font-size: 2vw;
     text-align: center;
     
     
