@@ -447,7 +447,7 @@ var drawMeaning = function(definition, red, blue, grey)
         
         
         
-    }).attr("x", 40).attr("y", 20).attr("fill", "black") 
+    }).attr("x", 2.5 +"vw").attr("y", 1.5 + "vw").attr("fill", "black") 
     
 
     
@@ -488,8 +488,8 @@ var drawLegend = function(colors, red, blue, grey)
             
  
     yes.append("rect").attr("width", 30).attr("height", 30).attr("fill", function(c){return red(c.color)})
-    yes.append("rect").attr("width", 30).attr("height", 30).attr("x", 40).attr("fill", function(c){ return grey(c.color)})
-    yes.append("rect").attr("width", 30).attr("height", 30).attr("x", 80).attr("fill", function(c){return blue(c.color)})
+    yes.append("rect").attr("width", 30).attr("height", 30).attr("x", 3 + "vw").attr("fill", function(c){ return grey(c.color)})
+    yes.append("rect").attr("width", 30).attr("height", 30).attr("x", 6 + "vw").attr("fill", function(c){return blue(c.color)})
     
 
     
@@ -499,7 +499,7 @@ var drawLegend = function(colors, red, blue, grey)
         
         
         
-    }).attr("x", 120).attr("y", 20).attr("fill", "black") 
+    }).attr("x", 9 + "vw").attr("y", 1.5 + "vw").attr("fill", "black") 
     
 }
 
@@ -655,16 +655,21 @@ var setup = function()
     drawLegend(colorsUsed, redScale, blueScale, greyScale)
     
     
-    var path = d3.geoPath().projection(d3.geoAlbersUsa().translate([screen.width/2, screen.height/2]))
+    
+    var projection = d3.geoAlbersUsa().fitSize([650, 900], geoData);
+    
+   
+   var path = d3.geoPath().projection(projection)
     d3.select("svg")
         .attr("width",screen.width)
         .attr("height",screen.height)
         .append("g")
         .attr("id", "map")
+        
         .selectAll("path")
         .data(geoData.features)
         .enter()
-        .append("path").attr("class", "state").style("pathLength", 50)
+        .append("path").attr("class", "state").style("pathLength", 10)
         .style("stroke", "black")
         .style("fill", function(d){
         

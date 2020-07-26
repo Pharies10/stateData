@@ -45,11 +45,11 @@
     
     
 }
-#svg
+#svg, svg
 {
     position: fixed;
     
-    left:20%;
+    left: 20%;
     right: 20%;
     
     height: 90%;
@@ -60,13 +60,51 @@
 }
 
 
+#colorLegend, #legend {
+    
+    font-size: 1.2vw;
+    
+    
+}
+#map {
+    
+    transform: translate(6vw, 1vw);
+    
+    
+    
+}
+#colorLegend {
+    
+    transform: translate(2vw, 3vw);
+    
+    
+    position:fixed;
+    left:0px;
+    top:0px;
+    
+}
+#legend {
+    
+        
+    transform: translate(30vw, 3vw);
+
+}
+
+rect {
+    height: 2vw;
+    width: 2vw
+    
+    
+}
+
+
 
 button
 {
     border: solid;
     width: 90%;
-    height: 70px;
-    margin: 7px;
+    height: 7vw;
+    margin: .5vw;
     font-size: 1.99vw;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -107,8 +145,8 @@ button:hover
     display: inline-block;
     font-size: 4vw;
     color: white;
-    width: 90%;
-    height: 70%;
+    width: 90vw;
+    height: 6vw;
     text-shadow: 2px 2px 4px #000000;
     text-align: center;
     overflow: hidden;
@@ -117,10 +155,7 @@ button:hover
     
     
     
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 1vw;
     
     
     
@@ -143,8 +178,8 @@ button:hover
 {
     
     background-color: aliceblue;
-    margin: 10px;
-    padding: 5px;
+    margin: 1vw;
+    padding: .5vw;
     font-size: 1.5vw;
     
     
@@ -164,3 +199,4 @@ button:hover
     
     
 }
+
